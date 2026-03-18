@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090806" />
   <title>Contact | Manzil Family Restaurant</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
@@ -14,12 +15,12 @@
         <img src="images/Logo.webp" alt="Manzil Family Restaurant logo" />
         <span>MANZIL FAMILY RESTAURANT</span>
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="site-navigation" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <nav class="site-nav">
+      <nav class="site-nav" id="site-navigation" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="menu.html">Menus</a>
@@ -47,21 +48,26 @@
         <div class="contact-grid">
           <div class="contact-card">
             <h3>Address</h3>
-            <p>293, Chilaw Road, Periyamulla, Negombo, Sri Lanka, 11500</p>
+            <p>
+              <a href="https://www.google.com/maps?q=293%2C%20Chilaw%20Road%2C%20Periyamulla%2C%20Negombo%2C%20Sri%20Lanka" target="_blank" rel="noopener">
+                293, Chilaw Road, Periyamulla, Negombo, Sri Lanka, 11500
+              </a>
+            </p>
           </div>
           <div class="contact-card">
             <h3>Phone</h3>
-            <p>077 150 1101</p>
-            <p>+94 78 888 8892</p>
+            <p><a href="tel:+94771501101">077 150 1101</a></p>
+            <p><a href="tel:+94788888892">+94 78 888 8892</a></p>
           </div>
           <div class="contact-card">
             <h3>Email</h3>
-            <p>mahdhirestaurant@gmail.com</p>
+            <p><a href="mailto:mahdhirestaurant@gmail.com">mahdhirestaurant@gmail.com</a></p>
           </div>
         </div>
         <div class="action-buttons">
           <a class="btn btn-primary" href="https://wa.me/94771501101" target="_blank" rel="noopener">WhatsApp</a>
-          <a class="btn btn-ghost" href="mailto:mahdhirestaurant@gmail.com">Email</a>
+          <a class="btn btn-ghost" href="tel:+94771501101">Call Now</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps?q=293%2C%20Chilaw%20Road%2C%20Periyamulla%2C%20Negombo%2C%20Sri%20Lanka" target="_blank" rel="noopener">Get Directions</a>
         </div>
       </div>
     </section>
@@ -106,9 +112,10 @@
       </div>
       <div>
         <h4>Contact</h4>
-        <p>293, Chilaw Road, Periyamulla, Negombo, Sri Lanka</p>
-        <p>077 150 1101 | +94 78 888 8892</p>
-        <p>mahdhirestaurant@gmail.com</p>
+        <a class="inline-link" href="https://www.google.com/maps?q=293%2C%20Chilaw%20Road%2C%20Periyamulla%2C%20Negombo%2C%20Sri%20Lanka" target="_blank" rel="noopener">293, Chilaw Road, Periyamulla, Negombo, Sri Lanka</a>
+        <a class="inline-link" href="tel:+94771501101">077 150 1101</a>
+        <a class="inline-link" href="tel:+94788888892">+94 78 888 8892</a>
+        <a class="inline-link" href="mailto:mahdhirestaurant@gmail.com">mahdhirestaurant@gmail.com</a>
       </div>
       <div>
         <h4>Follow Us</h4>
@@ -118,7 +125,7 @@
         </div>
       </div>
     </div>
-    <p class="footer-bottom">� 2026 Manzil Family Restaurant. All rights reserved. Powered by MR Solutions.</p>
+    <p class="footer-bottom">&copy; 2026 Manzil Family Restaurant. All rights reserved. Powered by MR Solutions.</p>
   </footer>
 
   <a class="floating-whatsapp" href="https://wa.me/94771501101" target="_blank" rel="noopener">
@@ -126,7 +133,3 @@
   </a>
 </body>
 </html>
-
-
-
-

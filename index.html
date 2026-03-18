@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090806" />
   <title>Manzil Family Restaurant | Negombo</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
@@ -14,12 +15,12 @@
         <img src="images/Logo.webp" alt="Manzil Family Restaurant logo" />
         <span>MANZIL FAMILY RESTAURANT</span>
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="site-navigation" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <nav class="site-nav">
+      <nav class="site-nav" id="site-navigation" aria-label="Primary">
         <a class="active" href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="menu.html">Menus</a>
@@ -70,7 +71,7 @@
           </div>
         </div>
         <div class="split-media" data-animate>
-          <img src="images/inside%201.jpg" alt="Elegant dining room" />
+          <img src="images/inside%201.jpg" alt="Elegant dining room" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
@@ -83,21 +84,21 @@
         </div>
         <div class="card-grid">
           <article class="menu-card">
-            <img src="images/smoked%20mixed%20platter.webp" alt="Smoked mixed platter" />
+            <img src="images/smoked%20mixed%20platter.webp" alt="Smoked mixed platter" loading="lazy" decoding="async" />
             <div class="menu-card-body">
               <h3>Smoked Mixed Platter</h3>
               <p>Succulent grill selection with aromatic spices and house sauces.</p>
             </div>
           </article>
           <article class="menu-card">
-            <img src="images/hot%20butter%20prawns.webp" alt="Hot butter prawns" />
+            <img src="images/hot%20butter%20prawns.webp" alt="Hot butter prawns" loading="lazy" decoding="async" />
             <div class="menu-card-body">
               <h3>Hot Butter Prawns</h3>
               <p>Golden prawns finished with chili butter glaze and fresh herbs.</p>
             </div>
           </article>
           <article class="menu-card">
-            <img src="images/special%20cheese%20kottu.webp" alt="Special cheese kottu" />
+            <img src="images/special%20cheese%20kottu.webp" alt="Special cheese kottu" loading="lazy" decoding="async" />
             <div class="menu-card-body">
               <h3>Special Cheese Kottu</h3>
               <p>Street-style favorite elevated with premium cheese and signature seasoning.</p>
@@ -140,16 +141,16 @@
           <button class="carousel-control carousel-prev" aria-label="Previous slide">&#10094;</button>
           <div class="carousel-track">
             <div class="carousel-item">
-              <img src="images/banner 1.jpg" alt="Restaurant ambience" />
+              <img src="images/banner 1.jpg" alt="Restaurant ambience" loading="lazy" decoding="async" />
             </div>
             <div class="carousel-item">
-              <img src="images/cus 1.jpg" alt="Happy customers" />
+              <img src="images/cus 1.jpg" alt="Happy customers" loading="lazy" decoding="async" />
             </div>
             <div class="carousel-item">
-              <img src="images/cus 2.jpg" alt="Family dining moment" />
+              <img src="images/cus 2.jpg" alt="Family dining moment" loading="lazy" decoding="async" />
             </div>
             <div class="carousel-item">
-              <img src="images/cus 3.jpg" alt="Guests enjoying Manzil" />
+              <img src="images/cus 3.jpg" alt="Guests enjoying Manzil" loading="lazy" decoding="async" />
             </div>
           </div>
           <button class="carousel-control carousel-next" aria-label="Next slide">&#10095;</button>
@@ -202,10 +203,10 @@
         </div>
         <div class="split-media">
           <div class="social-collage">
-            <img src="images/customer%20image1.webp" alt="Happy customer" />
-            <img src="images/customer%20image%202.webp" alt="Dining moment" />
-            <img src="images/customer%20image%203.webp" alt="Family dining" />
-            <img src="images/customer%20image%204.webp" alt="Signature experience" />
+            <img src="images/customer%20image1.webp" alt="Happy customer" loading="lazy" decoding="async" />
+            <img src="images/customer%20image%202.webp" alt="Dining moment" loading="lazy" decoding="async" />
+            <img src="images/customer%20image%203.webp" alt="Family dining" loading="lazy" decoding="async" />
+            <img src="images/customer%20image%204.webp" alt="Signature experience" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
@@ -228,9 +229,10 @@
       </div>
       <div>
         <h4>Contact</h4>
-        <p>293, Chilaw Road, Periyamulla, Negombo, Sri Lanka</p>
-        <p>077 150 1101 | +94 78 888 8892</p>
-        <p>mahdhirestaurant@gmail.com</p>
+        <a class="inline-link" href="https://www.google.com/maps?q=293%2C%20Chilaw%20Road%2C%20Periyamulla%2C%20Negombo%2C%20Sri%20Lanka" target="_blank" rel="noopener">293, Chilaw Road, Periyamulla, Negombo, Sri Lanka</a>
+        <a class="inline-link" href="tel:+94771501101">077 150 1101</a>
+        <a class="inline-link" href="tel:+94788888892">+94 78 888 8892</a>
+        <a class="inline-link" href="mailto:mahdhirestaurant@gmail.com">mahdhirestaurant@gmail.com</a>
       </div>
       <div>
         <h4>Follow Us</h4>
@@ -240,7 +242,7 @@
         </div>
       </div>
     </div>
-    <p class="footer-bottom">© 2026 Manzil Family Restaurant. All rights reserved. Powered by MR Solutions.</p>
+    <p class="footer-bottom">&copy; 2026 Manzil Family Restaurant. All rights reserved. Powered by MR Solutions.</p>
   </footer>
 
   <a class="floating-whatsapp" href="https://wa.me/94771501101" target="_blank" rel="noopener">
