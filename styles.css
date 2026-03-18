@@ -48,15 +48,18 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   opacity: 0;
-  transition: opacity 0.6s ease;
+  filter: blur(8px);
+  transition: opacity 0.6s ease, filter 0.6s ease;
 }
 
 body.page-loaded {
   opacity: 1;
+  filter: blur(0);
 }
 
 body.page-exit {
   opacity: 0;
+  filter: blur(8px);
 }
 
 h1,
