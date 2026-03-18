@@ -47,16 +47,16 @@ body {
   font-weight: 400;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  transform: translateX(0);
-  transition: transform 0.6s ease;
+  opacity: 0;
+  transition: opacity 0.6s ease;
 }
 
-body.page-enter {
-  transform: translateX(40px);
+body.page-loaded {
+  opacity: 1;
 }
 
 body.page-exit {
-  transform: translateX(-40px);
+  opacity: 0;
 }
 
 h1,

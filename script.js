@@ -7,9 +7,9 @@
 };
 
 ready(() => {
-  document.body.classList.add("page-enter");
-  requestAnimationFrame(() => {
-    document.body.classList.remove("page-enter");
+  document.body.classList.add("page-loaded");
+  window.addEventListener("pageshow", () => {
+    document.body.classList.add("page-loaded");
     document.body.classList.remove("page-exit");
   });
 
