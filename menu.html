@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menus | Manzil Family Restaurant</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body class="page-menu">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <img src="images/Logo.webp" alt="Manzil Family Restaurant logo" />
+        <span>MANZIL FAMILY RESTAURANT</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="menu.html">Menus</a>
+        <a href="vacancies.html">Vacancies</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--menu">
+      <div class="container hero-content" data-animate>
+        <p class="eyebrow">Our Menus</p>
+        <h1>Crafted flavors for every occasion</h1>
+        <p class="hero-lead">Explore our premium selection of mains, seafood, grills, and signature drinks.</p>
+      </div>
+    </section>
+
+    <section class="section menu-section">
+      <div class="container" data-animate>
+        <div class="section-heading">
+          <h2>Menu Categories</h2>
+          <p>Select a category to explore the Manzil collection.</p>
+        </div>
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="mains">Mains</button>
+          <button class="filter-btn" data-filter="seafood">Seafood</button>
+          <button class="filter-btn" data-filter="grill">Grill</button>
+          <button class="filter-btn" data-filter="breads">Breads</button>
+          <button class="filter-btn" data-filter="beverages">Beverages</button>
+          <button class="filter-btn" data-filter="desserts">Desserts</button>
+        </div>
+
+        <div class="card-grid menu-grid">
+          <article class="menu-card" data-category="mains">
+            <img src="images/rice%20and%20curry.webp" alt="Rice and curry" />
+            <div class="menu-card-body">
+              <h3>Rice and Curry</h3>
+              <p>Traditional Sri Lankan rice platter with curated curries and sambols.</p>
+            </div>
+          </article>
+          <article class="menu-card" data-category="mains">
+            <img src="images/chicken%20palandi.webp" alt="Chicken palandi" />
+            <div class="menu-card-body">
+              <h3>Chicken Palandi</h3>
+              <p>Slow-cooked chicken with bold roasted spices and coconut richness.</p>
+            </div>
+          </article>
+          <article class="menu-card" data-category="mains">
+            <img src="images/beef%20masala.webp" alt="Beef masala" />
+            <div class="menu-card-body">
+              <h3>Beef Masala</h3>
+              <p>Deep-flavored masala gravy with tender beef and aromatic herbs.</p>
+            </div>
+          </article>
+          <article class="menu-card" data-category="seafood">
+            <img src="images/crab%20curry.webp" alt="Crab curry" />
+            <div class="menu-card-body">
+              <h3>Crab Curry</h3>
+              <p>Signature Negombo-style crab curry with bold coastal spices.</p>
+            </div>
+          </article>
+          <article class="menu-card" data-category="seafood">
+            <img src="images/prawns%20curry.webp" alt="Prawns curry" />
+            <div class="menu-card-body">
+              <h3>Prawns Curry</h3>
+              <p>Fresh prawns simmered in creamy coconut with fresh curry leaves.</p>
+            </div>
+          </article>
+          <article class="menu-card" data-category="seafood">
+            <img src="images/hot%20butter%20prawns.webp" alt="Hot butter prawns" />
+            <div class="menu-card-body">
+              <h3>Hot Butter Prawns</h3>
+              <p>Golden prawns finished with chili butter glaze and fresh herbs.</p>
+            </div>
+          </article>
+          <article class="menu-card" data-category="grill">
+            <img src="images/grilled%20bbq%20with%20butter%20rotti.webp" alt="Grilled BBQ with butter rotti" />
+            <div class="menu-card-body">
+              <h3>Grilled BBQ Platter</h3>
+              <p>Smoky grilled cuts served with butter rotti and house dip.</p>
+            </div>
+          </article>
+          <article class="menu-card" data-category="grill">
+            <img src="images/chicken%20tikka%20with%20naan%20rotti.webp" alt="Chicken tikka with naan" />
+            <div class="menu-card-body">
+              <h3>Chicken Tikka with Naan</h3>
+              <p>Tandoor-roasted tikka paired with pillowy naan and mint chutney.</p>
+            </div>
+          </article>
+          <article class="menu-card" data-category="grill">
+            <img src="images/smoked%20mixed%20platter.webp" alt="Smoked mixed platter" />
+            <div class="menu-card-body">
+              <h3>Smoked Mixed Platter</h3>
+              <p>Signature grill featuring chicken, beef, and seafood selections.</p>
+            </div>
+          </article>
+          <article class="menu-card" data-category="breads">
+            <img src="images/cheese%20naan.webp" alt="Cheese naan" />
+            <div class="menu-card-body">
+              <h3>Cheese Naan</h3>
+              <p>Classic naan stuffed with molten cheese and butter finish.</p>
+            </div>
+          </article>
+          <article class="menu-card" data-category="breads">
+            <img src="images/naan%20rotti%20with%20beef%26chicken%20korma.webp" alt="Naan rotti with korma" />
+            <div class="menu-card-body">
+              <h3>Naan Rotti with Korma</h3>
+              <p>Soft rotti served with rich beef and chicken korma.</p>
+            </div>
+          </article>
+          <article class="menu-card" data-category="breads">
+            <img src="images/bbq%20dum%20parata%20fry.webp" alt="BBQ dum parata" />
+            <div class="menu-card-body">
+              <h3>BBQ Dum Parata</h3>
+              <p>Layered parata with smoky BBQ filling and spicy dip.</p>
+            </div>
+          </article>
+          <article class="menu-card" data-category="beverages">
+            <img src="images/mojito.webp" alt="Mojito" />
+            <div class="menu-card-body">
+              <h3>Fresh Mojito</h3>
+              <p>Mint, lime, and soda blended for a crisp, refreshing finish.</p>
+            </div>
+          </article>
+          <article class="menu-card" data-category="beverages">
+            <img src="images/special%20fiesta.webp" alt="Special fiesta" />
+            <div class="menu-card-body">
+              <h3>Special Fiesta</h3>
+              <p>Signature mocktail with tropical fruits and Manzil flair.</p>
+            </div>
+          </article>
+          <article class="menu-card" data-category="beverages">
+            <img src="images/fruit%20salad.webp" alt="Fruit salad" />
+            <div class="menu-card-body">
+              <h3>Fresh Fruit Bowl</h3>
+              <p>Seasonal fruit selection served chilled with a citrus drizzle.</p>
+            </div>
+          </article>
+          <article class="menu-card" data-category="desserts">
+            <img src="images/vegitable%20salad.webp" alt="Vegetable salad" />
+            <div class="menu-card-body">
+              <h3>Garden Salad</h3>
+              <p>Light, crisp salad with citrus dressing and premium greens.</p>
+            </div>
+          </article>
+          <article class="menu-card" data-category="desserts">
+            <img src="images/potato%20wedges.webp" alt="Potato wedges" />
+            <div class="menu-card-body">
+              <h3>Golden Potato Wedges</h3>
+              <p>Crunchy wedges seasoned with paprika and signature dip.</p>
+            </div>
+          </article>
+          <article class="menu-card" data-category="desserts">
+            <img src="images/chicken%20devilled.webp" alt="Chicken devilled" />
+            <div class="menu-card-body">
+              <h3>Devilled Chicken Bites</h3>
+              <p>Sweet and spicy bites finished with caramelized peppers.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section specials-highlight">
+      <div class="container" data-animate>
+        <div class="section-heading">
+          <h2>Specials</h2>
+          <p>Limited-time favorites crafted with bold accents.</p>
+        </div>
+        <div class="card-grid">
+          <article class="special-card">
+            <img src="images/special%20menu%201.webp" alt="Special menu" />
+            <div>
+              <h3>Manzil Signature Feast</h3>
+              <p>Chef-curated feast with grills, curries, and handcrafted sides.</p>
+            </div>
+          </article>
+          <article class="special-card">
+            <img src="images/shawarma%20platter.webp" alt="Shawarma platter" />
+            <div>
+              <h3>Premium Shawarma Platter</h3>
+              <p>Slow-roasted shawarma with garlic sauce and warm flatbread.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>MANZIL FAMILY RESTAURANT</h3>
+        <p>Premium dining in Negombo with unforgettable flavors and warm hospitality.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menus</a>
+        <a href="vacancies.html">Vacancies</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>293, Chilaw Road, Periyamulla, Negombo, Sri Lanka</p>
+        <p>077 150 1101 | +94 78 888 8892</p>
+        <p>mahdhirestaurant@gmail.com</p>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com/ManzilLK/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/manzillk" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2026 Manzil Family Restaurant. All rights reserved. Powered by MR Solutions.</p>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/94771501101" target="_blank" rel="noopener">
+    WhatsApp
+  </a>
+</body>
+</html>
+
+
